@@ -30,7 +30,7 @@ public class Dev {
         }
     }
 
-    public double calcularXp() {
+    public double calcularTotalXp() {
         // pegamos cada conteudo do set de conteudosConcluidos, pegamos o xp de cada conteudo e somamos
         return this.conteudosConcluidos.stream().mapToDouble(conteudo -> conteudo.calcularXp()).sum();
     }
@@ -43,11 +43,11 @@ public class Dev {
         this.nome = nome;
     }
 
-    public Set<Conteudo> getconteudosInscritos() {
+    public Set<Conteudo> getConteudosInscritos() {
         return conteudosInscritos;
     }
 
-    public void setconteudosInscritos(Set<Conteudo> conteudosInscritos) {
+    public void setConteudosInscritos(Set<Conteudo> conteudosInscritos) {
         this.conteudosInscritos = conteudosInscritos;
     }
 
